@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif; }
+
+:root {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif; }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf2f8;
+  font-size: 62.5%; }
+
+img {
+  width: 100%; }
+
+.contenedor-card {
+  position: relative;
+  display: flex;
+  background-color: #ffffff;
+  width: 73.4rem;
+  height: 28.3rem;
+  border-radius: 1rem;
+  margin-top: 4.5rem;
+  margin-right: 1rem; }
+  .contenedor-card .imagen {
+    background-image: url(../images/drawers.jpg);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 48%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor-card .caja-texto {
+    width: 72%;
+    padding: 4rem; }
+    .contenedor-card .caja-texto h1 {
+      font-size: 20px;
+      color: #48556a; }
+    .contenedor-card .caja-texto p {
+      margin-top: 1rem;
+      font-size: 13px;
+      color: #6d7f97; }
+    .contenedor-card .caja-texto .caja-texto-usuario {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      justify-content: space-between; }
+      .contenedor-card .caja-texto .caja-texto-usuario .contenedor-caja {
+        display: flex;
+        gap: 1rem; }
+      .contenedor-card .caja-texto .caja-texto-usuario img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; }
+      .contenedor-card .caja-texto .caja-texto-usuario .datos-usuario p span {
+        font-weight: bold; }
+      .contenedor-card .caja-texto .caja-texto-usuario .datos-usuario p {
+        margin: 0.2rem; }
+      .contenedor-card .caja-texto .caja-texto-usuario .share-icon {
+        float: left;
+        background-color: #ecf2f8;
+        padding: 7px;
+        width: 30px;
+        height: 26px; }
+        .contenedor-card .caja-texto .caja-texto-usuario .share-icon:hover {
+          cursor: pointer; }
+  .contenedor-card .navegador-share {
+    position: absolute;
+    left: 74%;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 4rem;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    background-color: #48556a; }
+    .contenedor-card .navegador-share p {
+      margin: 0;
+      letter-spacing: 0.5rem;
+      font-size: 17px;
+      color: #6d7f97; }
+    .contenedor-card .navegador-share img {
+      width: 20px;
+      height: 18px; }
+    .contenedor-card .navegador-share .flecha {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: -28px;
+      fill: #48556a; }
+    .contenedor-card .navegador-share .nuevo-share {
+      display: none; }
+
+.display {
+  display: none !important; }
+
+@media (max-width: 748px) {
+  .display {
+    display: flex !important; }
+  .contenedor-card {
+    margin-top: -5rem;
+    flex-direction: column;
+    width: 32.8rem;
+    height: 50.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; }
+    .contenedor-card .imagen {
+      width: 100%;
+      height: 200px;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1rem; }
+    .contenedor-card .caja-texto-usuario {
+      padding: 2rem 0; }
+    .contenedor-card .caja-texto {
+      height: auto;
+      width: 100%;
+      padding: 3rem 3rem 0 3rem; }
+      .contenedor-card .caja-texto h1 {
+        font-size: 17px; }
+      .contenedor-card .caja-texto p {
+        font-size: 13.7px; }
+    .contenedor-card .navegador-share {
+      top: 89%;
+      left: 0%;
+      padding-top: 1rem;
+      width: 100%;
+      height: 6rem;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+      .contenedor-card .navegador-share .flecha {
+        display: none; }
+      .contenedor-card .navegador-share .nuevo-share {
+        display: inline;
+        border-radius: 50%;
+        background-color: #ecf2f8;
+        padding: 7px;
+        width: 30px;
+        height: 26px; }
+        .contenedor-card .navegador-share .nuevo-share:hover {
+          cursor: pointer; }
+    .contenedor-card .display {
+      display: none !important; } }

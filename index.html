@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <div class="contenedor-card" id="contenedor-card">
+
+      <div class="imagen">
+
+      </div>
+      
+
+      <div class="caja-texto">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <div class="caja-texto-usuario" id="caja-texto-usuario">
+
+          <div class="contenedor-caja">
+
+          
+          <img src="images/avatar-michelle.jpg" alt="usuario" />
+
+          <div class="datos-usuario">
+            <p><span>Michelle Appleton</span></p>
+            <p>28 Jun 2020</p>
+          </div>
+        </div>
+
+          <img class="share-icon" id="share-icon" onclick="miniModal()" src="images/icon-share.svg" alt="">
+
+
+
+
+
+
+          
+        </div>
+      </div>
+      <div class="navegador-share display" id="nav-share">
+
+        <p>SHARE</p>
+        
+        <img src="images/icon-facebook.svg" alt="">
+        <img src="images/icon-twitter.svg" alt="">
+        <img src="images/icon-pinterest.svg" alt="">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon flecha" viewBox="0 0 512 512"><title>Caret Down</title><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+
+
+
+
+        <img class="nuevo-share" id="nuevo-share" onclick="miniModal()" src="images/icon-share.svg" alt="">
+       
+        
+        
+                </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

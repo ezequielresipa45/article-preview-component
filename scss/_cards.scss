@@ -1,0 +1,196 @@
+.contenedor-card {
+    position: relative;
+    display: flex;
+    background-color: #ffffff;
+    width: 73.4rem; //734
+    height: 28.3rem; //280
+    border-radius: 1rem;
+
+    //PROVISORIO
+
+    margin-top: 4.5rem;
+    margin-right: 1rem;
+
+    .imagen {
+        background-image: url(../images/drawers.jpg);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        width: 48%;
+        background-position: left;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .caja-texto {
+        width: 72%;
+
+        padding: 4rem;
+        h1 {
+            font-size: 20px;
+            color: $VeryDarkGrayishBlue;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 13px;
+            color: $DesaturatedDarkBlue;
+        }
+
+        .caja-texto-usuario {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+
+            justify-content: space-between;
+
+            .contenedor-caja {
+                display: flex;
+                gap: 1rem;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .datos-usuario {
+                p span {
+                    font-weight: bold;
+                }
+
+                p {
+                    margin: 0.2rem;
+                }
+            }
+
+            .share-icon {
+                float: left;
+                background-color: $LightGrayishBlue;
+                padding: 7px;
+                width: 30px;
+                height: 26px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .navegador-share {
+        position: absolute;
+        left: 74%;
+        bottom: 100px;
+
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 4rem;
+        align-items: center;
+        gap: 2rem;
+        border-radius: 1rem;
+        background-color: $VeryDarkGrayishBlue;
+
+        p {
+            margin: 0;
+            letter-spacing: 0.5rem;
+            font-size: 17px;
+            color: $DesaturatedDarkBlue;
+        }
+
+        img {
+            width: 20px;
+            height: 18px;
+        }
+
+        .flecha {
+            width: 50px;
+            height: 50px;
+
+            position: absolute;
+            bottom: -28px;
+            fill: $VeryDarkGrayishBlue;
+        }
+
+        .nuevo-share {
+            display: none;
+        }
+    }
+}
+
+.display {
+    display: none !important;
+}
+
+@media (max-width: 748px) {
+    .display {
+        display: flex !important;
+    }
+    .contenedor-card {
+        margin-top: -5rem;
+        flex-direction: column;
+        width: 32.8rem; //328
+        height: 50.5rem; //515
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        .imagen {
+            width: 100%;
+            height: 200px;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 1rem;
+        }
+
+        .caja-texto-usuario {
+            padding: 2rem 0;
+        }
+
+        .caja-texto {
+            height: auto;
+            width: 100%;
+            padding: 3rem 3rem 0 3rem;
+
+            h1 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 13.7px;
+            }
+        }
+
+        .navegador-share {
+            top: 89%;
+            left: 0%;
+            padding-top: 1rem;
+            width: 100%;
+            height: 6rem;
+
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            .flecha {
+                display: none;
+            }
+
+            .nuevo-share {
+                display: inline;
+                border-radius: 50%;
+                background-color: $LightGrayishBlue;
+                padding: 7px;
+                width: 30px;
+                height: 26px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .display {
+            display: none !important;
+        }
+
+
+    }
+}

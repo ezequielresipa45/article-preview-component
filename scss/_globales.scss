@@ -1,0 +1,46 @@
+
+// ## Colors
+
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+
+$GrayishBlue: hsl(212, 23%, 69%);
+
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
+// ## Typography
+
+$font-size: 13px;
+
+// ### Headings
+
+$font: 'Manrope', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: $font
+}
+
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $LightGrayishBlue;
+    font-size: 62.5%;
+}
+
+img{
+    width: 100%;
+}
